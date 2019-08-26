@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Email Id:
+        </th>
+      </tr>
+      <% for(let i=0; i<customer.length; i++){%>
+      <tr>
+        <td>
+            <%= customer[i].name %>
+        </td>
+         <td>
+            <%= customer[i].email %>
+        </td>
+      </tr>
+      <%} %>
+    </table>
+  </body>
+</html>
